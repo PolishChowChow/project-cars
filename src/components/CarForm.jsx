@@ -17,7 +17,6 @@ function CarForm(){
             name:name,
             cost:parseFloat(cost),
         }));
-        console.log(state)
     }
     return <div className="car-form panel">
         <h4 className="subtitle is-3">
@@ -30,7 +29,7 @@ function CarForm(){
                     <input type="text" onChange={handleNameChange} value={name}/>
                 </div>
                 <div className="field">
-                    <label className="label">Name</label>
+                    <label className="label">Cost</label>
                     <input type="number" onChange={handleCostChange} value={cost}/>
                 </div>
                 <div className="field">
